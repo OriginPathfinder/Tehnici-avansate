@@ -30,7 +30,7 @@ public class Student {
         return nrStudenti;
     }
 
-    // Main
+
     public static void main(String[] args) {
         Student s1 = new Student("Andrei Popescu", 2, "211A", 8.5, 9.0);
         Student s2 = new Student("Maria Ionescu", 1, "111B", 7.0, 6.5);
