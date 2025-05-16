@@ -1,4 +1,4 @@
-class Salariat {
+ class Salariat {
 
     public static final double impozit = 0.15 ;
     public  String name;
@@ -34,8 +34,14 @@ public void afisare ()
     System.out.println("Salariubrut: "+salariubrut+" lei");
     System.out.println("SalariuNet: "+salariuNet()+" lei");
     System.out.println("CursDolar: 1.00$ = "+cursDolar+" lei");
-    System.out.println("SalariuBrutDolar: "+(float)(SalariuBrutDolar()) +" $");
-    System.out.println("SalariuNetDolar: "+(float)(SalariuNetDolar()) +" $");
+    System.out.printf("SalariuBrutDolar: %.2f $\n",SalariuBrutDolar() );
+    System.out.printf("SalariuNetDolar: %.2f $\n\n",SalariuNetDolar() );
 
 }
+     public static void main(String[] args) {
+
+         Salariat s1 = new Salariat("Popa Ion","Contabil",36,7300000);
+
+         s1.afisare();
+     }
 }
